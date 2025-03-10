@@ -1,0 +1,389 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 25 30% 10%;
+    --foreground: 30 30% 98%;
+
+    --card: 25 30% 15%;
+    --card-foreground: 30 30% 98%;
+
+    --popover: 25 30% 15%;
+    --popover-foreground: 30 30% 98%;
+
+    --primary: 25 70% 40%;
+    --primary-foreground: 30 30% 98%;
+
+    --secondary: 35 50% 20%;
+    --secondary-foreground: 30 30% 98%;
+
+    --muted: 35 50% 20%;
+    --muted-foreground: 30 30% 80%;
+
+    --accent: 15 80% 50%;
+    --accent-foreground: 30 30% 98%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 30 30% 98%;
+
+    --border: 30 30% 25%;
+    --input: 30 30% 25%;
+    --ring: 25 70% 40%;
+
+    --radius: 0.5rem;
+  }
+
+  .light {
+    --background: 36 30% 96%;
+    --foreground: 30 10% 15%;
+
+    --card: 36 30% 92%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 36 30% 92%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 25 70% 40%;
+    --primary-foreground: 36 30% 97%;
+
+    --secondary: 35 50% 85%;
+    --secondary-foreground: 30 10% 15%;
+
+    --muted: 35 50% 90%;
+    --muted-foreground: 30 10% 40%;
+
+    --accent: 15 80% 50%;
+    --accent-foreground: 36 30% 97%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 36 30% 97%;
+
+    --border: 30 30% 85%;
+    --input: 30 30% 85%;
+    --ring: 25 70% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-playfair;
+  }
+}
+
+/* Custom Batik Colors */
+:root {
+  --batik-dark: #2a1a0a;
+  --batik-medium: #5c3d1e;
+  --batik-light: #f5efe7;
+  --batik-accent: #d4a76a;
+  --batik-gold: #d4af37;
+}
+
+.dark {
+  --batik-dark: #2a1a0a;
+  --batik-medium: #5c3d1e;
+  --batik-light: #f5efe7;
+  --batik-accent: #d4a76a;
+  --batik-gold: #d4af37;
+}
+
+.light {
+  --batik-dark: #5c3d1e;
+  --batik-medium: #8b6b4a;
+  --batik-light: #ffffff;
+  --batik-accent: #d4a76a;
+  --batik-gold: #d4af37;
+}
+
+.bg-batik-dark {
+  background-color: var(--batik-dark);
+}
+
+.bg-batik-medium {
+  background-color: var(--batik-medium);
+}
+
+.bg-batik-light {
+  background-color: var(--batik-light);
+}
+
+.bg-batik-accent {
+  background-color: var(--batik-accent);
+}
+
+.bg-batik-gold {
+  background-color: var(--batik-gold);
+}
+
+.text-batik-dark {
+  color: var(--batik-dark);
+}
+
+.text-batik-medium {
+  color: var(--batik-medium);
+}
+
+.text-batik-light {
+  color: var(--batik-light);
+}
+
+.text-batik-accent {
+  color: var(--batik-accent);
+}
+
+.text-batik-gold {
+  color: var(--batik-gold);
+}
+
+.border-batik-accent {
+  border-color: var(--batik-accent);
+}
+
+.border-batik-gold {
+  border-color: var(--batik-gold);
+}
+
+/* Batik Patterns */
+.batik-wave-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 25C20 25 20 75 40 75C60 75 60 25 80 25C100 25 100 75 120 75' stroke='%23D4A76A' stroke-width='2' fill='none' stroke-opacity='0.2' stroke-dasharray='6 4'/%3E%3Cpath d='M-20 50C0 50 0 100 20 100C40 100 40 50 60 50C80 50 80 100 100 100' stroke='%23D4A76A' stroke-width='2' fill='none' stroke-opacity='0.2' stroke-dasharray='6 4'/%3E%3Cpath d='M-20 0C0 0 0 50 20 50C40 50 40 0 60 0C80 0 80 50 100 50' stroke='%23D4A76A' stroke-width='2' fill='none' stroke-opacity='0.2' stroke-dasharray='6 4'/%3E%3C/svg%3E");
+}
+
+.batik-wind-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10C15 20 35 20 40 10C45 0 65 0 70 10C75 20 95 20 100 10M0 30C5 40 25 40 30 30C35 20 55 20 60 30C65 40 85 40 90 30M10 50C15 60 35 60 40 50C45 40 65 40 70 50C75 60 95 60 100 50M0 70C5 80 25 80 30 70C35 60 55 60 60 70C65 80 85 80 90 70M10 90C15 100 35 100 40 90C45 80 65 80 70 90C75 100 95 100 100 90' stroke='%23D4A76A' stroke-width='1.5' fill='none' stroke-opacity='0.15'/%3E%3C/svg%3E");
+}
+
+.batik-parang-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0L30 30L0 60L0 0Z' stroke='%23D4A76A' stroke-width='1' stroke-opacity='0.2'/%3E%3Cpath d='M30 0L60 30L30 60L0 30L30 0Z' stroke='%23D4A76A' stroke-width='1' stroke-opacity='0.2'/%3E%3Cpath d='M30 0L60 30L60 0L30 0Z' stroke='%23D4A76A' stroke-width='1' stroke-opacity='0.2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.batik-kawung-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Ccircle cx='30' cy='0' r='20' stroke='%23D4A76A' stroke-width='1' stroke-opacity='0.2'/%3E%3Ccircle cx='30' cy='60' r='20' stroke='%23D4A76A' stroke-width='1' stroke-opacity='0.2'/%3E%3Ccircle cx='0' cy='30' r='20' stroke='%23D4A76A' stroke-width='1' stroke-opacity='0.2'/%3E%3Ccircle cx='60' cy='30' r='20' stroke='%23D4A76A' stroke-width='1' stroke-opacity='0.2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-500 {
+  animation-delay: 0.5s;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(212, 167, 106, 0) 0%,
+    rgba(212, 167, 106, 0.2) 50%,
+    rgba(212, 167, 106, 0) 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 3s infinite linear;
+}
+
+/* Batik Decorative Elements */
+.batik-divider {
+  position: relative;
+  height: 2px;
+  background-color: var(--batik-accent);
+  opacity: 0.3;
+}
+
+.batik-divider::before,
+.batik-divider::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--batik-accent);
+  top: -4px;
+}
+
+.batik-divider::before {
+  left: 0;
+}
+
+.batik-divider::after {
+  right: 0;
+}
+
+.batik-border {
+  position: relative;
+  border: 1px solid var(--batik-accent);
+  border-radius: var(--radius);
+}
+
+.batik-border::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 1px solid var(--batik-accent);
+  border-radius: calc(var(--radius) + 5px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.batik-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.batik-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+.batik-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--batik-accent), var(--batik-gold), var(--batik-accent));
+  opacity: 0.8;
+}
+
+.batik-badge {
+  position: relative;
+  overflow: hidden;
+}
+
+.batik-badge::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(212, 167, 106, 0.2) 0%, rgba(212, 167, 106, 0) 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.batik-badge:hover::after {
+  opacity: 1;
+}
+
+/* Scroll Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-100 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-200 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-300 {
+  transition-delay: 0.3s;
+}
+
+.reveal-delay-400 {
+  transition-delay: 0.4s;
+}
+
+.reveal-delay-500 {
+  transition-delay: 0.5s;
+}
+
+/* Section Styles */
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-bold mb-16 text-batik-light relative inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--batik-accent), transparent);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--batik-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--batik-medium);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--batik-accent);
+}
+
