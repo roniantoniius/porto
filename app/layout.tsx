@@ -18,7 +18,6 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Roni Antonius Sinabutar | Portfolio",
   description: "Software Developer & Data Scientist Portfolio",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

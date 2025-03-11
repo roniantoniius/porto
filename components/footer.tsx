@@ -29,6 +29,7 @@ const Footer = () => {
                 variant="ghost"
                 size="icon"
                 className="rounded-full bg-batik-medium/20 text-batik-light hover:bg-batik-accent/20 hover:text-batik-accent"
+                onClick={() => window.open('https://github.com/roniantoniius', '_blank')}
               >
                 <Github size={20} />
               </Button>
@@ -36,22 +37,9 @@ const Footer = () => {
                 variant="ghost"
                 size="icon"
                 className="rounded-full bg-batik-medium/20 text-batik-light hover:bg-batik-accent/20 hover:text-batik-accent"
+                onClick={() => window.open('https://www.linkedin.com/in/aantoniusron/', '_blank')}
               >
                 <Linkedin size={20} />
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-full bg-batik-medium/20 text-batik-light hover:bg-batik-accent/20 hover:text-batik-accent"
-              >
-                <Twitter size={20} />
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-full bg-batik-medium/20 text-batik-light hover:bg-batik-accent/20 hover:text-batik-accent"
-              >
-                <Mail size={20} />
               </Button>
             </div>
           </div>
@@ -63,7 +51,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-batik-light/80">
                 <Mail className="h-5 w-5 text-batik-accent" />
-                <span>roni.antonius@example.com</span>
+                <span>aantoniusron@gmail.com</span>
               </li>
               <li className="flex items-center gap-3 text-batik-light/80">
                 <svg
@@ -80,7 +68,7 @@ const Footer = () => {
                 >
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
-                <span>+62 123 456 7890</span>
+                <span>+62 821 1652 9074</span>
               </li>
               <li className="flex items-center gap-3 text-batik-light/80">
                 <svg
@@ -98,7 +86,7 @@ const Footer = () => {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span>Jakarta, Indonesia</span>
+                <span>Jakarta Timur, Indonesia</span>
               </li>
             </ul>
           </div>

@@ -13,29 +13,21 @@ const OrganizationSection = () => {
 
   const organizations = [
     {
-      name: "Data Science Indonesia",
-      role: "Senior Member",
-      period: "2019 - Present",
+      name: "Perplexity",
+      role: "Campust Strategist",
+      period: "Present",
       description:
-        "Contributing to community projects, mentoring junior data scientists, and organizing workshops on AI and machine learning.",
-      logo: "/placeholder.svg?height=80&width=80",
+        "Promoted Perplexity productivity tools at Indonesian Education University student workshops and events. Helped peers improve their research and information management skills for academic and extracurricular activities.",
+      logo: "/preplexity.jpeg?height=80&width=80",
     },
     {
-      name: "Tech Community Leaders",
-      role: "Community Organizer",
-      period: "2020 - Present",
+      name: "Google Developer Student Club @ UPI ",
+      role: "Member",
+      period: "2024 - Present",
       description:
-        "Organizing tech meetups, facilitating knowledge sharing sessions, and building a network of tech professionals.",
-      logo: "/placeholder.svg?height=80&width=80",
-    },
-    {
-      name: "AI Research Group",
-      role: "Research Contributor",
-      period: "2018 - 2021",
-      description:
-        "Collaborated on research papers focused on generative AI applications in business process automation.",
-      logo: "/placeholder.svg?height=80&width=80",
-    },
+        "Conducted several machine learning projects through Competition, Study Jam, and online/offline events.",
+      logo: "/logo google.jpeg?height=80&width=80",
+    }
   ]
 
   return (
@@ -46,11 +38,11 @@ const OrganizationSection = () => {
       <div className="section-container relative z-20" ref={ref}>
         <h2 className="section-title">Organizations</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {organizations.map((org, index) => (
             <Card
               key={index}
-              className={`batik-card h-full bg-batik-dark/80 backdrop-blur-sm border-batik-accent/30 transition-all duration-700 ${
+              className={`batik-card w-full md:w-[30rem] bg-batik-dark/80 backdrop-blur-sm border-batik-accent/30 transition-all duration-700 ${
                 inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
               }`}
               style={{ transitionDelay: `${index * 200}ms` }}

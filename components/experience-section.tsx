@@ -14,30 +14,30 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
-      title: "Senior Software Developer",
-      company: "Tech Innovations Inc.",
-      period: "2021 - Present",
-      description:
-        "Leading backend development team, implementing AI solutions for process automation, and developing data-driven applications.",
-      skills: ["Python", "Node.js", "React", "TensorFlow", "OpenAI API", "Mistral AI"],
-      logo: "/placeholder.svg?height=80&width=80",
+      title: "Junior Data Scientist",
+      company: "Badan Meteorologi, Klimatologi, dan Geofisika",
+      period: "Sept - Dec 2024",
+      descriptions: [
+        "Streamlined data handling by automating data entry and processing with a ELT pipeline, reducing data refresh time by 30% and improving data reliability.",
+        "Coordinated and supported meetings between project developers and end-users to enhance communication and project alignment.",
+        "Developed strategic KPI dashboards with Flask and React, improving managerial decision-making efficiency by 20%.",
+        "Ensured efficient data visualization clarity for management, maintaining daily updates and achieving a 98% data accuracy rate.",
+        "Developed a React dashboard integrated with a deep learning model to monitor sensor data and report anomalies, achieving 94% detection accuracy and reducing false positives by 40%.",
+      ],
+      skills: ["Python", "Node.js", "React", "TensorFlow", "ETL", "Statistical Analysis", "Data Visualization"],
+      logo: "/bmkg.jpeg?height=80&width=80",
     },
     {
-      title: "Data Scientist",
-      company: "DataMinds Analytics",
-      period: "2018 - 2021",
-      description:
-        "Conducted hypothesis testing, built predictive models, and developed recommendation systems for e-commerce platforms.",
-      skills: ["Python", "R", "SQL", "Machine Learning", "Statistical Analysis", "Data Visualization"],
-      logo: "/placeholder.svg?height=80&width=80",
-    },
-    {
-      title: "Backend Developer",
-      company: "WebSolutions Co.",
-      period: "2016 - 2018",
-      description: "Developed RESTful APIs, implemented database solutions, and optimized application performance.",
-      skills: ["Java", "Spring Boot", "PostgreSQL", "Redis", "Docker", "Microservices"],
-      logo: "/placeholder.svg?height=80&width=80",
+      title: "IT Project Consultant",
+      company: "Ministry of Marine Affairs and Fisheries Indonesia",
+      period: "Feb - Jun 2023",
+      descriptions: [
+        "Optimized data management and validation for over 10,000 alumnus data sets using Python and SQL pipeline, resulting in a 40% increase in data processing efficiency and seamless integration with E-Latar.",
+        "Served as a back-end developer by designing and implementing robust APIs for the e-learning platform, ensuring secure logic and efficient data exchange.",
+        "Organized cross-functional meetings to align stakeholders on application design, accelerating project milestones by 15%.",
+      ],
+      skills: ["Python", "SQL", "ETL", "Rest API", "Software Documentation", "FastAPI"],
+      logo: "/kkp.jpeg?height=80&width=80",
     },
   ]
 
@@ -88,7 +88,11 @@ const ExperienceSection = () => {
               </CardHeader>
 
               <CardContent className="pt-4">
-                <p className="mb-6 text-batik-light/90">{exp.description}</p>
+                <ul className="mb-6 text-batik-light/90 list-disc pl-5 space-y-2">
+                  {exp.descriptions.map((desc, idx) => ( // enumerate key dan value
+                    <li key={idx}>{desc}</li>
+                  ))}
+                </ul>
                 <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill, idx) => (
                     <Badge key={idx} className="bg-batik-medium text-batik-light hover:bg-batik-accent/30">
@@ -106,4 +110,3 @@ const ExperienceSection = () => {
 }
 
 export default ExperienceSection
-

@@ -122,7 +122,7 @@ const HeroSection = () => {
                 {/* Profile image */}
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-batik-dark">
                   <Image
-                    src="/foto.png?height=400&width=400"
+                    src="/poto_roni_coklat_terang1.png?height=400&width=400"
                     alt="Roni Antonius Sinabutar"
                     width={400}
                     height={400}

@@ -13,32 +13,53 @@ const CertificationSection = () => {
 
   const certifications = [
     {
-      title: "Advanced Machine Learning Specialization",
-      issuer: "Coursera",
-      date: "2023",
+      title: "Java Programming II",
+      issuer: "University of Helsinki’s",
+      date: "2025",
       description:
-        "Comprehensive specialization covering advanced machine learning techniques, deep learning, and natural language processing.",
+        "Focuses on core Java fundamentals such as object-oriented design, exception handling, JavaFX for GUI development, and basic network programming.",
     },
     {
-      title: "AWS Certified Machine Learning Specialist",
-      issuer: "Amazon Web Services",
-      date: "2022",
+      title: "Data Engineering Specialization",
+      issuer: "IBM",
+      date: "2024",
       description:
-        "Professional certification validating expertise in designing, implementing, and maintaining machine learning solutions on AWS.",
+        "Hands-on experience in data warehousing and ETL processes using big data tools like Apache Spark, Hadoop, and workflow automation with Apache Airflow.",
     },
     {
-      title: "TensorFlow Developer Certificate",
+      title: "Google Data Analytics Professional",
       issuer: "Google",
-      date: "2021",
+      date: "2024",
       description:
-        "Certification demonstrating proficiency in using TensorFlow to build and train neural network models for various applications.",
+        "Develops expertise in data cleaning, analysis, and visualization using Google tools including Google Sheets, Google Data Studio, and BigQuery.",
     },
     {
-      title: "Professional Data Scientist",
-      issuer: "DataCamp",
-      date: "2020",
+      title: "Google Business Intelligence Professional",
+      issuer: "Google",
+      date: "2024",
       description:
-        "Certification covering data manipulation, visualization, machine learning, and statistical analysis using Python and R.",
+        "Covers advanced data modeling, reporting, and visualization techniques with BI tools such as Google Data Studio, Looker, and BigQuery to drive business insights.",
+    },
+    {
+      title: "Applied Generative AI and Natural Language Professional",
+      issuer: "Udemy",
+      date: "2024",
+      description:
+        "Focuses on practical applications of generative AI and NLP through hands-on projects using transformer models and frameworks like TensorFlow, PyTorch, and Hugging Face.",
+    },
+    {
+      title: "Magang dan Studi Independen Bersertifikat 6: Cepat Cakap Data Scientist",
+      issuer: "Kementerian Pendidikan dan Kebudayaan",
+      date: "2024",
+      description:
+        "Accelerates data science proficiency by learn Python programming, statistics, data visualization with Matplotlib and Seaborn, and machine learning with Scikit-Learn and TensorFlow.",
+    },
+    {
+      title: "Scholarship on Machine Learning Expert",
+      issuer: "Development of Bank Singapore",
+      date: "2024",
+      description:
+        "Provides advanced training in machine learning techniques—from traditional algorithms to deep learning—using frameworks such as TensorFlow and PyTorch.",
     },
   ]
 
@@ -78,6 +99,7 @@ const CertificationSection = () => {
                   variant="outline"
                   size="sm"
                   className="gap-1 border-batik-accent/50 text-batik-light hover:bg-batik-accent/20"
+                  onClick={() => window.open('https://www.linkedin.com/in/aantoniusron/details/certifications', '_blank')}
                 >
                   <ExternalLink size={16} /> View Certificate
                 </Button>

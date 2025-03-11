@@ -36,7 +36,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="h-12 w-12 rounded-full bg-batik-accent flex items-center justify-center text-batik-dark font-bold text-xl">
-              RS
+              R
             </div>
             <span className="font-playfair font-bold text-2xl text-batik-light">Roni Antonius Sinabutar</span>
           </div>

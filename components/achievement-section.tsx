@@ -12,22 +12,28 @@ const AchievementSection = () => {
 
   const achievements = [
     {
-      title: "Best AI Implementation Award",
-      organization: "Tech Innovation Summit",
+      title: "1st at Marine Information System Competency Week (2023)",
+      organization: "Universitas Pendidikan Indonesia",
       year: "2023",
-      description: "Recognized for developing an innovative AI solution that improved business efficiency by 45%.",
+      description: "Won 1st place in Web Creation category by developing 'Tangan Laut' app that streamlined marine debris donation processing and increased user engagement by 50%.",
     },
     {
-      title: "Data Science Excellence",
-      organization: "Data Analytics Association",
-      year: "2022",
-      description: "Awarded for outstanding contributions to the field of data science and predictive analytics.",
+      title: "11th at Hackathon Data Science Komdigi",
+      organization: "Kementerian Komunikasi Digital",
+      year: "2024",
+      description: "Enhanced product recommendations by 25% using Associate Rule Mining and developed scalable API for customer applications, improving system adaptability by 40%.",
     },
     {
-      title: "Top Contributor",
-      organization: "Open Source AI Community",
-      year: "2021",
-      description: "Recognized as a top contributor to open-source AI projects, with over 200 contributions.",
+      title: "Juara Google Cloud Platform 11",
+      organization: "Google Cloud",
+      year: "2025",
+      description: "Optimized cloud infrastructure solutions through innovative architecture design, achieving 30% performance improvement in resource-intensive applications.",
+    },
+    {
+      title: "Published 3 Paper at Proceeding Indonesian Conference of Maritim",
+      organization: "Indonesian Conference of Maritim 2024",
+      year: "2024",
+      description: "Presented research on WebGIS disaster mapping (40% accuracy improvement), enterprise architecture design (30% operational optimization), and AI-based marine tourism websites enhancing conservation efforts.",
     },
   ]
 
